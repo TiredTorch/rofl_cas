@@ -1,15 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Main.scss'
+import Mainpopupitem from './MainPopUpItem/MainPopUpItem';
 
-const Main = () => {
-    return (
-        <div className='Main'>
-            <div className="greetings">
-                <h2>Рофлан Казиныч</h2>
-                <p>Лучшее казино в СНГ</p>
+class Main extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {
+            PopUp : 'PopUp hidden'
+        }
+    }
+
+    togglePopUp() {
+        var css = (this.state.PopUp === 'PopUp hidden') ? 'PopUp show' : 'PopUp hidden'
+        this.setState({PopUp : css});
+    }
+
+    render() {
+        return (
+            <div className='Main'>
+                <div className="greetings">
+                    <h2>Рофлан Казиныч</h2>
+                    <p>Лучшее казино в СНГ</p>
+                    <button onClick={this.togglePopUp.bind(this)}>Начать</button>
+                </div>
+                <div className={this.state.PopUp}>
+                    <h2>Правила Игр</h2>
+                    <p>Нажмите на иконки чтобы начать игру</p>
+                    <div className="wrapper">
+                        <Mainpopupitem gamename='Блекджек' gamedesct='lorem ipsum dolor'/>
+                        <Mainpopupitem gamename='Слоты' gamedesct='lorem ipsum dolor'/>
+                        <Mainpopupitem gamename='Предсказания' gamedesct='lorem ipsum dolor'/>
+                        <Mainpopupitem gamename='В разработке' gamedesct='lorem ipsum dolor'/>
+                    </div>
+                    <button onClick={this.togglePopUp.bind(this)}>
+                        Скрыть справку
+                    </button>
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default Main;
