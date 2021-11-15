@@ -1,0 +1,37 @@
+.Navbar__item{
+    margin-top: 3vh;
+
+    img{
+        transition: all .3s;
+        display: block;
+        width: 10vh;
+        height: 10vh;
+        filter: sepia(80%);
+    }
+    .popUp{
+        position: absolute;
+        left: 7vw;
+        background-color: rgb(129, 129, 129);
+        padding: .7vw;
+        display: none;
+
+    }
+    &:hover{
+        img{
+            transition: all .3s;
+            filter: sepia(0%);
+        }
+        .popUp{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .Navbar__item{
+        margin-top: 0;
+        img{
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+}

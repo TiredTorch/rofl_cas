@@ -1,0 +1,22 @@
+.Navbar{
+    position: absolute;
+    height: 96vh;
+    background-color: rgb(0, 0, 0);
+    padding: 2vh .5vw;
+    display: flex;
+    flex-direction: column;
+
+    border-right: .5vw rgb(146, 1, 1) solid;
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar{
+        justify-content: space-evenly;
+        width: 98vw;
+        height: auto;
+        display: flex;
+        border-right: none;
+        flex-direction: row;
+        border-bottom: .5vw rgb(146, 1, 1) solid;
+    }
+}

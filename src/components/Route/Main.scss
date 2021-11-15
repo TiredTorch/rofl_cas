@@ -1,0 +1,42 @@
+.Main{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../img/bg.jpg);
+    background-size: 100vw 100vh;
+    .greetings{
+        position: absolute;
+        color: wheat;
+        top: 10vh;
+        left: 50vw;
+        h2{
+            font-size: 6vw;
+        }
+        p{
+            margin-top: 2vh;
+            text-align: center;
+            font-size: 3vw;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Main{
+        .greetings{
+            background-color: rgba(212, 45, 45, 0.658);
+            border-radius: 20px;
+            padding: 1vw;
+            width: 58vw;
+            top: 30vh;
+            left: 20vw;
+            h2{
+                font-size: 8vh;
+                text-align: center;
+            }
+            p{
+                margin-top: 2vh;
+                text-align: center;
+                font-size: 5vh;
+            }
+        }
+    }
+}
