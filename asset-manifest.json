@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/%7Brofl_cas%7D/static/css/main.39709a92.chunk.css",
+    "main.js": "/%7Brofl_cas%7D/static/js/main.f085f7cf.chunk.js",
+    "main.js.map": "/%7Brofl_cas%7D/static/js/main.f085f7cf.chunk.js.map",
+    "runtime-main.js": "/%7Brofl_cas%7D/static/js/runtime-main.01cde6fe.js",
+    "runtime-main.js.map": "/%7Brofl_cas%7D/static/js/runtime-main.01cde6fe.js.map",
+    "static/js/2.3cccbe59.chunk.js": "/%7Brofl_cas%7D/static/js/2.3cccbe59.chunk.js",
+    "static/js/2.3cccbe59.chunk.js.map": "/%7Brofl_cas%7D/static/js/2.3cccbe59.chunk.js.map",
+    "index.html": "/%7Brofl_cas%7D/index.html",
+    "static/css/main.39709a92.chunk.css.map": "/%7Brofl_cas%7D/static/css/main.39709a92.chunk.css.map",
+    "static/js/2.3cccbe59.chunk.js.LICENSE.txt": "/%7Brofl_cas%7D/static/js/2.3cccbe59.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/%7Brofl_cas%7D/static/media/bg.8646b146.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01cde6fe.js",
+    "static/js/2.3cccbe59.chunk.js",
+    "static/css/main.39709a92.chunk.css",
+    "static/js/main.f085f7cf.chunk.js"
+  ]
+}
