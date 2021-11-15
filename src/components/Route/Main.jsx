@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Main.scss'
+import './styles/Main.scss'
 import Mainpopupitem from './MainPopUpItem/MainPopUpItem';
 
 class Main extends Component {
