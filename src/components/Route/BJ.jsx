@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './styles/BJ.scss'
 import Card from './Card/Card'
 
@@ -157,7 +158,7 @@ class Bj extends Component {
                     <h2>{this.state.popUpTitle}</h2>
                     <p>{this.state.popUpDescription}</p>
                     <a onClick={() => {this.togglePopUp(); this.startBJ()}}>Сделать ставку</a>
-                    <a href="">В меню</a>
+                    <Link to="/">В меню</Link>
                     <input type="text" />
                 </div>
             </div>

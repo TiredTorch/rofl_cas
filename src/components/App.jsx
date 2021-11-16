@@ -1,3 +1,4 @@
+import {BrowserRouter  as Router, Route, Routes, useRoutes} from 'react-router-dom';
 import Navbar from "./Navbar/Navbar";
 import Main from "./Route/Main";
 import Bj from "./Route/BJ";
@@ -7,10 +8,15 @@ import './App.scss'
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
       <Navbar/>
-      <Ball/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/bj' element={<Bj/>}/>
+        <Route path='/slots' element={<Slots/>}/>
+        <Route path='/ball' element={<Ball/>}/>
+      </Routes>
+    </Router>
   );
 }
 

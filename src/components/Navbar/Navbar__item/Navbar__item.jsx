@@ -1,12 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Navbar__item.scss'
 
 const NavbarItem = (props) => {
     return (
         <div className='Navbar__item'>
-            <a href={props.src}>
+            <Link to={props.src}>
                 <img src={props.pic} alt={props.alt} />
-            </a>
+            </Link>
             <div className="popUp">
                 {props.act}
             </div>
