@@ -2,14 +2,20 @@ import React from 'react';
 import './Navbar.scss'
 import NavbarItem from './Navbar__item/Navbar__item';
 
+import MainPic from '../../img/logo.png'
+import CardsPic from '../../img/cards.png'
+import SlotPic from '../../img/slot.png'
+import BallPic from '../../img/ball.png'
+import SoonPic from '../../img/coming.png'
+
 const Navbar = () => {
     return (
         <div className='Navbar'>
-            <NavbarItem src='#' act='Главное меню' pic='http://placekitten.com/200/300' alt='main'/>
-            <NavbarItem src='#' act='Блекджек' pic='http://placekitten.com/200/300' alt='bj'/>
-            <NavbarItem src='#' act='Слоты' pic='http://placekitten.com/200/300' alt='slots'/>
-            <NavbarItem src='#' act='Предсказания' pic='http://placekitten.com/200/300' alt='prediction'/>
-            <NavbarItem src='#' act='В разработке' pic='http://placekitten.com/200/300' alt='soon'/>
+            <NavbarItem src='#' act='Главное меню' pic={MainPic} alt='main'/>
+            <NavbarItem src='#' act='Блекджек' pic={CardsPic} alt='bj'/>
+            <NavbarItem src='#' act='Слоты' pic={SlotPic} alt='slots'/>
+            <NavbarItem src='#' act='Предсказания' pic={BallPic} alt='prediction'/>
+            <NavbarItem src='#' act='В разработке' pic={SoonPic}  alt='soon'/>
         </div>
     );
 }

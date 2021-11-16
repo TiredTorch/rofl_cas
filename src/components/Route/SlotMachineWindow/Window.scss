@@ -1,0 +1,30 @@
+.Window{
+    background-color: rgb(206, 90, 90);
+    margin-top: 10vh;
+    border: .4vw solid rgb(107, 4, 18);
+    border-radius: 30px;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 20vh;
+
+    }
+
+    &.Worked{
+        width: 25%;
+        height: 20vh;
+        transition: all .3s;
+        font-size: 2vw;
+    }
+    &.notWorked{
+        width: 4%;
+        height: 5vh;
+        transition: all .3s;
+        font-size: 0;
+        img{
+            display: none;
+        }
+    }
+}

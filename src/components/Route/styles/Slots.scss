@@ -1,0 +1,56 @@
+.Slots{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../../img/table.png);
+
+    .Machine{
+        border-radius: 30px;
+        border: .5vw solid rgb(1, 133, 71);
+        position: absolute;
+        width: 60vw;
+        left: 19vw;
+        background-color: #fff;
+        height: 80vh;
+        top: 9vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .bid{
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+        }
+        button{
+            border-radius: 10px;
+            cursor: pointer;
+            height: 8vh;
+            width: 10vw;
+            font-size: 0vw;
+            transition: all .3s;
+            border: .3vw solid rgba(221, 52, 52, 0);
+            background-color: rgb(221, 52, 52);
+            &:hover{
+                transition: all .3s;
+                font-size: 2vw;
+                width: 30vw;
+                border: .3vw solid rgb(221, 52, 52);
+                background-color: #fff;
+            }
+            &:focus{
+                outline: none;
+            }
+            &.hidden{
+                border-radius: 0;
+                transition: all .3s;
+                width: 0;
+                height: 0;
+                font-size: 0;
+                border: 0vw solid rgb(221, 52, 52);
+                background-color: #fff;
+                cursor: default;
+            }
+        }
+    }
+}
