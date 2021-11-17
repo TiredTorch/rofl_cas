@@ -11,11 +11,11 @@ import SoonPic from '../../img/coming.png'
 const Navbar = () => {
     return (
         <div className='Navbar'>
-            <NavbarItem src='' act='Главное меню' pic={MainPic} alt='main'/>
+            <NavbarItem src='/rofl_cas' act='Главное меню' pic={MainPic} alt='main'/>
             <NavbarItem src='/bj' act='Блекджек' pic={CardsPic} alt='bj'/>
             <NavbarItem src='/slots' act='Слоты' pic={SlotPic} alt='slots'/>
             <NavbarItem src='/ball' act='Предсказания' pic={BallPic} alt='prediction'/>
-            <NavbarItem src='' act='В разработке' pic={SoonPic}  alt='soon'/>
+            <NavbarItem src='/rofl_cas' act='В разработке' pic={SoonPic}  alt='soon'/>
         </div>
     );
 }

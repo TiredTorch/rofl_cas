@@ -11,7 +11,7 @@ function App() {
     <Router className="App">
       <Navbar/>
       <Routes>
-        <Route exact path='' element={<Main/>}/>
+        <Route exact path='/rofl_cas' element={<Main/>}/>
         <Route path='/bj' element={<Bj/>}/>
         <Route path='/slots' element={<Slots/>}/>
         <Route path='/ball' element={<Ball/>}/>

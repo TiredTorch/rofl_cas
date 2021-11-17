@@ -158,7 +158,7 @@ class Bj extends Component {
                     <h2>{this.state.popUpTitle}</h2>
                     <p>{this.state.popUpDescription}</p>
                     <a onClick={() => {this.togglePopUp(); this.startBJ()}}>Сделать ставку</a>
-                    <Link to="">В меню</Link>
+                    <Link to="/rofl_cas">В меню</Link>
                     <input type="text" />
                 </div>
             </div>
