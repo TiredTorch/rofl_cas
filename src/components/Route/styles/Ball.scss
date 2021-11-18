@@ -1,4 +1,4 @@
-@keyframes shake {
+@keyframes shake1 {
     0% {
         left: calc((100vw - 60vh)/2);
     }
@@ -18,10 +18,29 @@
 
 }
 
+@keyframes shake1 {
+    0% {
+        left: calc((100vw - 60vw)/2);
+    }
+    15% {
+        left: calc((100vw - 60vw)/2.1);
+    }
+    45% {
+        left: calc((100vw - 60vw)/1.9);
+    }
+    75% {
+        left: calc((100vw - 60vw)/2.1);
+    }
+    100% {
+        left: calc((100vw - 60vw)/2);
+
+    }
+
+}
+
 .Ball{
     width: 100vw;
     height: 100vh;
-    background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 30%);
 
     .ball__area{
@@ -58,8 +77,34 @@
         }
 
         &.shake{
-            animation-name: shake;
+            animation-name: shake1;
             animation-duration: .5s;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Ball{
+        .ball__area{
+            top: 35vh;
+            left: 20vw;
+            background-size: 60vw;
+            background-repeat: no-repeat;
+            width: 60vw;
+            height: 60vw;
+
+            .ballTextArea{
+                top: calc(0vh);
+                height: 28vw;
+                width: 28vw;
+                left: 16.5vw;
+                top: 16.5vw;
+                line-height: 12vh;
+
+                &.see{
+                    font-size: 6vw;
+                }
+            }
         }
     }
 }

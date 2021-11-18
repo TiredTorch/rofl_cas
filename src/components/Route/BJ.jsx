@@ -52,6 +52,7 @@ class Bj extends Component {
     }
     
     startBJ = () => {
+        document.getElementsByClassName('enough')[0].style.display = 'flex';
         this.takeCard(true)
         setTimeout(() => {
             this.takeCard(false)
@@ -79,7 +80,7 @@ class Bj extends Component {
             let tempLeft = 60 - (this.state.dillerPos * 5);
             this.setState({dillerCards: [
                 ...this.state.dillerCards,
-                <Card top='5' left={tempLeft} bg={this.cards[cardIndex].pic}/>
+                <Card top='10' left={tempLeft} bg={this.cards[cardIndex].pic}/>
             ]})
             this.setState({dillerPos: this.state.dillerPos + 1, dillerPoints: this.state.dillerPoints + this.cards[cardIndex].value})
            
@@ -108,6 +109,7 @@ class Bj extends Component {
         if(this.state.userPoints > 21){
             this.finishBJ("У вас перебор!", "Вы проиграли, попробуйте снова")
         }else if (finish){
+            document.getElementsByClassName('enough')[0].style.display = 'none';
             this.enemyTurn();
             setTimeout(() => {
                 if(this.state.dillerPoints > 21){

@@ -33,7 +33,6 @@
             background-color: rgb(221, 52, 52);
             &:hover{
                 transition: all .3s;
-                font-size: 2vw;
                 width: 30vw;
                 border: .3vw solid rgb(221, 52, 52);
                 background-color: #fff;
@@ -44,12 +43,50 @@
             &.hidden{
                 border-radius: 0;
                 transition: all .3s;
+                transition: font-size 0s;
                 width: 0;
                 height: 0;
                 font-size: 0;
                 border: 0vw solid rgb(221, 52, 52);
                 background-color: #fff;
                 cursor: default;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .Slots{
+        .Machine{
+            button{
+                &:hover{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .Slots{
+        .Machine{
+            z-index: 60;
+            width: 96%;
+            left: 2%;
+
+            .bid{
+                font-size: 10vw;
+            }
+
+            button{
+                transition: all .3s;
+                font-size: 6vw;
+                width: 80vw;
+                border: .3vw solid rgb(221, 52, 52);
+                background-color: #fff;
+
+                &:hover{
+                    
+                    width: 80vw;
+                }
             }
         }
     }
