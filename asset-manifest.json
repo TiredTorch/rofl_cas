@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rofl_cas/static/css/main.fba81d7d.chunk.css",
-    "main.js": "/rofl_cas/static/js/main.8984e96b.chunk.js",
-    "main.js.map": "/rofl_cas/static/js/main.8984e96b.chunk.js.map",
+    "main.css": "/rofl_cas/static/css/main.cd198142.chunk.css",
+    "main.js": "/rofl_cas/static/js/main.0572e2dd.chunk.js",
+    "main.js.map": "/rofl_cas/static/js/main.0572e2dd.chunk.js.map",
     "runtime-main.js": "/rofl_cas/static/js/runtime-main.ada4b30d.js",
     "runtime-main.js.map": "/rofl_cas/static/js/runtime-main.ada4b30d.js.map",
     "static/js/2.adf60fb3.chunk.js": "/rofl_cas/static/js/2.adf60fb3.chunk.js",
     "static/js/2.adf60fb3.chunk.js.map": "/rofl_cas/static/js/2.adf60fb3.chunk.js.map",
     "index.html": "/rofl_cas/index.html",
-    "static/css/main.fba81d7d.chunk.css.map": "/rofl_cas/static/css/main.fba81d7d.chunk.css.map",
+    "static/css/main.cd198142.chunk.css.map": "/rofl_cas/static/css/main.cd198142.chunk.css.map",
     "static/js/2.adf60fb3.chunk.js.LICENSE.txt": "/rofl_cas/static/js/2.adf60fb3.chunk.js.LICENSE.txt",
     "static/media/ace.9d98f4bc.png": "/rofl_cas/static/media/ace.9d98f4bc.png",
     "static/media/Ball.scss": "/rofl_cas/static/media/ball.b6b79222.png",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.ada4b30d.js",
     "static/js/2.adf60fb3.chunk.js",
-    "static/css/main.fba81d7d.chunk.css",
-    "static/js/main.8984e96b.chunk.js"
+    "static/css/main.cd198142.chunk.css",
+    "static/js/main.0572e2dd.chunk.js"
   ]
 }
