@@ -105,6 +105,10 @@
                     font-size: 6vw;
                 }
             }
+            &.shake{
+                animation-name: shake2;
+                animation-duration: .5s;
+            }
         }
     }
 }
