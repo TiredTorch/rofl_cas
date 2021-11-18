@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {BrowserRouter  as Router, Route, Routes} from 'react-router-dom';
 import Navbar from "./Navbar/Navbar";
 import Main from "./Route/Main";
@@ -7,9 +8,12 @@ import Ball from "./Route/Ball";
 import './App.scss'
 
 function App() {
+  let [name, useName] = useState('');
+  let [money, useMoney] = useState(1000);
+
   return (
       <Router className="App">
-        <Navbar/>
+        <Navbar name={name} setName={useName} money={money}/>
         <Routes>
           <Route exact path='/rofl_cas' element={<Main/>}/>
           <Route path='/bj' element={<Bj/>}/>

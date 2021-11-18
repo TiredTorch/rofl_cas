@@ -161,7 +161,7 @@ class Bj extends Component {
                     <input type="number" />
                     <p>{this.state.popUpDescription}</p>
                     <a onClick={() => {this.togglePopUp(); this.startBJ()}}>Сделать ставку</a>
-                    <Link to="/rofl_cas">В меню</Link>
+                    <Link to="/rofl_cas" >В меню</Link>
                 </div>
             </div>
         );

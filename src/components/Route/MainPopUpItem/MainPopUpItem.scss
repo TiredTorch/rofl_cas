@@ -1,8 +1,12 @@
 .MainPopUpItem{
     width: 40%;
-    background-color: rgb(94, 91, 91);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: .2vw solid black;
     margin-top: 3vh;
     h3{
+        font-weight: 700;
         padding: 1vh;
         font-size: 4vh;
     }

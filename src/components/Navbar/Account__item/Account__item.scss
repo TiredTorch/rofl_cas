@@ -1,0 +1,151 @@
+.AccountItem{
+    transition: all .6s;
+    background-size: 100vw 100vh;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    .wrapper{
+        position: absolute;
+        right: 10vw;
+        top: 5vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 30vw;
+        height: 50vh;
+
+        h2{
+            font-size: 6vw;
+        }
+        input{
+            margin-top: 4vh;
+            width: 90%;
+            height: 4.5vh;
+            font-size: 2.3vw;
+            text-align: center;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        button{
+            margin-top: 10vh;
+            width: 50%;
+            height: 6vh;
+            font-size: 2vw;
+        }
+
+    }
+
+    &.hidden{
+        cursor: pointer;
+        transition: all .6s;
+        background-image: url(../../../img/money.png);
+        background-size: 12vh 4vh;
+        width: 12vh;
+        height: 4vh;
+        top: 10vh;
+        left: 2vw;
+        transform: rotate(-40deg);
+
+        h2{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        .buttons{
+            opacity: 0;
+            button{
+                width: 0;
+                height: 0;
+                border: none;
+                display: none;
+            }
+        }
+    }
+
+    &.show{
+        z-index: 50;
+        transition: all .6s;
+        background-image: url(../../../img/bgIsLog.jpg);
+        background-size: 100vw 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h2{
+            text-align: center;
+            width: 90%;
+            font-size: 3vw;
+            margin: 10vh 0;
+        }
+        p{
+            text-align: center;
+            width: 90%;
+            font-size: 4vw;
+            margin-bottom: 10vh;
+        }
+        .buttons{
+            opacity: 1;
+            margin-top: 20vh;
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+
+            button{
+                font-size: 2vw;
+                height: 6vh;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AccountItem{
+        &.hidden{
+            top: 12.5vh;
+            left: 40vw;
+        }
+        &.show{
+            h2{
+                
+                font-size: 8vw;
+            }
+            p{
+                
+                font-size: 5vw;
+            }
+            .buttons{
+                button{
+                    font-size: 4vw;
+                    height: 10vh;
+                }
+            }
+        }
+        .wrapper{
+            h2{
+                
+                font-size: 8vw;
+            }
+            input{
+                
+                font-size: 5vw;
+            }
+            button{
+                font-size: 4vw;
+                width: 30vw;
+            }
+        }
+    }
+}
