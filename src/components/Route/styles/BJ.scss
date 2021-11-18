@@ -4,6 +4,9 @@
     background: url(../../../img/table.png);
 
     .deck{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: all .3s;
         background: url(../../../img/deck.png) no-repeat;
         background-size: 10vw 30vh;
@@ -19,13 +22,17 @@
         &:hover{
             transition: all .3s;
             color: rgb(0, 0, 0);
-            padding-top: 3vw;
             filter: grayscale(60%);
             font-size: 4.5vw;
             font-weight: 700;
         }
     }
     .enough{
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         text-align: center;
         transition: all .3s;
         background-color: rgb(226, 51, 51);
@@ -37,7 +44,6 @@
         width: 1vw;
         height: 1vw;
         font-size: 0;
-        line-height: 7vw;
 
         &:hover{
             transition: all .3s;
@@ -102,6 +108,46 @@
             width: 20%;
             height: 7vh;
             background-color: rgb(165, 165, 165);
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .BJ{
+        .deck{
+            
+            transition: all .3s;
+            color: rgb(0, 0, 0);
+            filter: grayscale(60%);
+            font-size: 4.5vw;
+            font-weight: 700;
+
+            background-size: 20vw 20vh;
+            width: 20vw;
+            height: 20vh;
+            top: 35vh;
+            left: 75vw;
+        }
+        .enough{
+            transition: all .3s;
+            top: 63vh;
+            right: 9vw;
+            width: 10vw;
+            height: 10vw;
+            font-size: 2.5vw;
+        }
+        .PopUp{
+            top: 15vh;
+            height: 70vh;
+            h2{
+                font-size: 6vh;
+            }
+            p{
+                font-size: 4vh;
+            }
+            a{
+                font-size: 3vh;
+            }
         }
     }
 }

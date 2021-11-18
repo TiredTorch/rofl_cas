@@ -1,4 +1,4 @@
-import {BrowserRouter  as Router, Route, Routes, useRoutes} from 'react-router-dom';
+import {BrowserRouter  as Router, Route, Routes} from 'react-router-dom';
 import Navbar from "./Navbar/Navbar";
 import Main from "./Route/Main";
 import Bj from "./Route/BJ";
