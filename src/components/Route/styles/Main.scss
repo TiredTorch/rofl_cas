@@ -90,17 +90,40 @@
             background-color: rgba(212, 45, 45, 0.658);
             border-radius: 20px;
             padding: 1vw;
-            width: 58vw;
-            top: 30vh;
-            left: 20vw;
+            width: 90vw;
+            height: 70vh;
+            top: 20vh;
+            left: 5vw;
             h2{
-                font-size: 8vh;
+                margin-top: 10vh;
+                font-size: 7vh;
                 text-align: center;
             }
             p{
                 margin-top: 2vh;
                 text-align: center;
+                font-size: 4vh;
+            }
+            button{
+                font-size: 7vh;
+                margin-top: 10vh;
+                margin-left: 5%;
+                width: 90%;
+                height: 20vh;
+            }
+        }
+        .PopUp{
+            z-index: 60;
+            h2{
                 font-size: 5vh;
+            }
+            p{
+                font-size: 3vh;
+            }
+            button{
+                margin-left: 5%;
+                width: 90%;
+                font-size: 4vh;
             }
         }
     }

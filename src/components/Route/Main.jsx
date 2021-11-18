@@ -27,9 +27,9 @@ class Main extends Component {
                     <h2>Правила Игр</h2>
                     <p>Нажмите на иконки чтобы начать игру</p>
                     <div className="wrapper">
-                        <Mainpopupitem gamename='Блекджек' gamedesct='lorem ipsum dolor'/>
-                        <Mainpopupitem gamename='Слоты' gamedesct='lorem ipsum dolor'/>
-                        <Mainpopupitem gamename='Предсказания' gamedesct='lorem ipsum dolor'/>
+                        <Mainpopupitem gamename='Блекджек' gamedesct='Соберите 21 одно очко считая номиналы карт'/>
+                        <Mainpopupitem gamename='Слоты' gamedesct='Выбейте 2 или 3 рисунка подряд'/>
+                        <Mainpopupitem gamename='Предсказания' gamedesct='Думайте о своем вопросе и трясите шар для ответа'/>
                         <Mainpopupitem gamename='В разработке' gamedesct='lorem ipsum dolor'/>
                     </div>
                     <button onClick={this.togglePopUp.bind(this)}>

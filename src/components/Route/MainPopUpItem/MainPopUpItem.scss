@@ -11,3 +11,9 @@
         padding: 1vh;
     }
 }
+
+@media screen and (max-width: 768px){
+    .MainPopUpItem{
+        width: 80%;
+    }
+}
