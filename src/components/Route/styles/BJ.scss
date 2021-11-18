@@ -37,12 +37,12 @@
         transition: all .3s;
         background-color: rgb(226, 51, 51);
         border-radius: 50%;
-        border: .5vw black solid;
+        border: .2vw black solid;
         top: 70vh;
         position: absolute;
-        right: 13.5vw;
-        width: 1vw;
-        height: 1vw;
+        right: 13.6vw;
+        width: 1.3vw;
+        height: 1.3vw;
         font-size: 0;
 
         &:hover{
@@ -74,44 +74,62 @@
        height: 90vh;
        position: absolute;
        top: 5vh;
-       background-color: white;
+
+       border-radius: 30px;
+       border:rgb(44, 25, 25) solid .5vw;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(140,68,50,1) 33%, rgba(142,43,31,1) 66%, rgba(0,0,0,1) 100%);
 
         text-align: center;
 
        h2{
+           width: 100%;
            padding-top: 5vh;
            font-size: 4.5vw;
+           color:rgb(255, 255, 255);
        }
        p{
-           margin: 2vh auto 0;
            text-align: center;
             font-size: 2.5vw;
             width: 90%;
+            color:rgb(255, 255, 255);
         }
         input{
+            border-radius: 10px;
+            background-color: rgb(223, 32, 32);
             font-size: 2vw;
             margin: auto;
-            width: 60%;
+            width: 20%;
             transition: all .3s;
             height: 6vh;
 
+            text-align: center;
+
             &:focus{
+                background-color: rgb(255, 53, 53);
                 transition: all .3s;
                 outline: none;
-                width: 80%;
+                width: 40%;
             }
         }
         a{
+            font-weight: 700;
+            border-radius: 20px;
+            padding: 0 10%;
             
             display: flex;
             justify-content: center;
             align-items: center;
             border: radius 30px;
-            border: .4vw solid black;
+            border: .2vw solid rgb(90, 12, 12);
             font-size: 2vw;
             width: 20%;
             height: 7vh;
             background-color: rgb(165, 165, 165);
+
+            &:visited{
+                color: inherit;
+            }
         }
     }
 }

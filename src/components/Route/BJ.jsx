@@ -158,10 +158,10 @@ class Bj extends Component {
                 <div className="enough" onClick={() => this.checkPoints(true)}>Хватит</div>
                 <div className={this.state.popUpActive}>
                     <h2>{this.state.popUpTitle}</h2>
+                    <input type="number" />
                     <p>{this.state.popUpDescription}</p>
                     <a onClick={() => {this.togglePopUp(); this.startBJ()}}>Сделать ставку</a>
                     <Link to="/rofl_cas">В меню</Link>
-                    <input type="text" />
                 </div>
             </div>
         );

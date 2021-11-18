@@ -18,7 +18,7 @@
 
 }
 
-@keyframes shake1 {
+@keyframes shake2 {
     0% {
         left: calc((100vw - 60vw)/2);
     }
@@ -55,6 +55,9 @@
         border-radius: 50%;
         
         .ballTextArea{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             background-color: #fff;
             opacity: 0;
@@ -66,13 +69,12 @@
 
             font-size: 0vh;
             text-align: center;
-            line-height: 25vh;
             transition: all .3s;
 
             &.see{
                 opacity: 1;
                 transition: all .3s;
-                font-size: 6vh;
+                font-size: 3vh;
             }
         }
 
@@ -99,10 +101,9 @@
                 width: 28vw;
                 left: 16.5vw;
                 top: 16.5vw;
-                line-height: 12vh;
 
                 &.see{
-                    font-size: 6vw;
+                    font-size: 3vw;
                 }
             }
             &.shake{

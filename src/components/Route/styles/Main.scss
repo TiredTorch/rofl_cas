@@ -41,9 +41,11 @@
         }
     }
     .PopUp{
-        border:rgb(0, 0, 0) solid 1vw;
         position: absolute;
-        background-color: rgb(255, 255, 255);
+        border:rgb(44, 25, 25) solid .5vw;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(140,68,50,1) 33%, rgba(142,43,31,1) 66%, rgba(0,0,0,1) 100%);
+        z-index: 60;
         width: 88vw;
         height: 88vh;
         top: 5vh;

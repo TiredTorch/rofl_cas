@@ -5,7 +5,10 @@
 
     .Machine{
         border-radius: 30px;
-        border: .5vw solid rgb(1, 133, 71);
+        border:rgb(44, 25, 25) solid .5vw;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(140,68,50,1) 33%, rgba(142,43,31,1) 66%, rgba(0,0,0,1) 100%);
+        
         position: absolute;
         width: 60vw;
         left: 19vw;
@@ -21,26 +24,29 @@
             width: 100%;
             text-align: center;
             font-size: 3vw;
+            padding: 0 20%;
         }
         button{
+            font-weight: 700;
             border-radius: 10px;
             cursor: pointer;
             height: 8vh;
             width: 10vw;
             font-size: 0vw;
             transition: all .3s;
-            border: .3vw solid rgba(221, 52, 52, 0);
+            border: .3vw solid rgb(0, 0, 0);
             background-color: rgb(221, 52, 52);
             &:hover{
                 transition: all .3s;
                 width: 30vw;
                 border: .3vw solid rgb(221, 52, 52);
-                background-color: #fff;
+                background-color: #CE5A5A;
             }
             &:focus{
                 outline: none;
             }
             &.hidden{
+                opacity: 0;
                 border-radius: 0;
                 transition: all .3s;
                 transition: font-size 0s;

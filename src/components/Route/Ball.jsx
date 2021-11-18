@@ -3,7 +3,7 @@ import './styles/Ball.scss'
 
 class Ball extends Component {
     advices = [
-        "Да", "Нет", "Возможно"
+        "Хз челик", "Это очевидно", "Отлетаешь", 'Зачем спрашиваешь'
     ]
 
     constructor(props) {
