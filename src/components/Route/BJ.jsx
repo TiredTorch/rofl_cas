@@ -31,6 +31,8 @@ class Bj extends Component {
         super(props);
         
         this.state = {
+            bid: 0,
+
             userPoints: 0,
             dillerPoints: 0,
 
@@ -49,9 +51,12 @@ class Bj extends Component {
             popUpDescription: 'Введите ставку чтобы начать'
         }
         this.takeCard = this.takeCard.bind(this);
+        this.props.useMoney(this.props.money - 22);
     }
     
-    startBJ = () => {
+    startBJ = () => {        
+        console.log(this.props.money)
+
         document.getElementsByClassName('enough')[0].style.display = 'flex';
         this.takeCard(true)
         setTimeout(() => {
@@ -158,9 +163,9 @@ class Bj extends Component {
                 <div className="enough" onClick={() => this.checkPoints(true)}>Хватит</div>
                 <div className={this.state.popUpActive}>
                     <h2>{this.state.popUpTitle}</h2>
-                    <input type="number" />
+                    <input type="number" id='inpt'/>
                     <p>{this.state.popUpDescription}</p>
-                    <a onClick={() => {this.togglePopUp(); this.startBJ()}}>Сделать ставку</a>
+                    <a onClick={() => {this.togglePopUp(); this.startBJ();}}>Сделать ставку</a>
                     <Link to="/rofl_cas" >В меню</Link>
                 </div>
             </div>

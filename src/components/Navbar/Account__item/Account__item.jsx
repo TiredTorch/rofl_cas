@@ -5,7 +5,7 @@ class AccountItem extends Component {
     constructor(props) {
         super(props);
          this.state = {
-             isLoggedIn: true,
+             isLoggedIn: false,
              title: 'Представься',
              showInfo: 'AccountItem show'
          }

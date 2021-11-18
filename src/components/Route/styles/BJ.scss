@@ -56,12 +56,12 @@
     }
     .PopUp{
         &.Active{
-            left: 5vw;
+            left: 2vw;
             transition: all .3s; 
 
         }
         &.notActive{
-            left: -95vw;
+            left: -98vw;
             transition: all .3s; 
         }
 
@@ -70,7 +70,7 @@
        flex-wrap: wrap;
        justify-content: space-evenly;
        z-index: 60;
-       width: 90vw;
+       width: 96vw;
        height: 90vh;
        position: absolute;
        top: 5vh;

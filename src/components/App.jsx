@@ -16,8 +16,8 @@ function App() {
         <Navbar name={name} setName={useName} money={money}/>
         <Routes>
           <Route exact path='/rofl_cas' element={<Main/>}/>
-          <Route path='/bj' element={<Bj/>}/>
-          <Route path='/slots' element={<Slots/>}/>
+          <Route path='/bj' element={<Bj useMoney={useMoney} money={money}/>}/>
+          <Route path='/slots' element={<Slots useMoney={useMoney} money={money}/>}/>
           <Route path='/ball' element={<Ball/>}/>
         </Routes>
       </Router>
